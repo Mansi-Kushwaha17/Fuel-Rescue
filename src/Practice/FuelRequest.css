@@ -1,0 +1,142 @@
+
+.fuel-request-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: #fff8f3;
+  font-family: 'Poppins', sans-serif;
+  color: #172b4d;
+}
+
+.fuel-request-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* Header */
+.fuel-request-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.fuel-request-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #a82d20;
+  margin-bottom: 10px;
+}
+
+.fuel-request-header p {
+  color: #795b50;
+  font-size: 15px;
+}
+
+/* Form Card */
+.fuel-request-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(168, 45, 32, 0.09);
+  border: 1px solid #f5dfd2;
+}
+
+.fuel-request-form h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #c34b2c;
+  margin: 10px 0 22px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f5e3d9;
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #49352f;
+  margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #e8d5ca;
+  border-radius: 8px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  color: #49352f;
+  background: #fffdfb;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #f27640;
+  box-shadow: 0 0 0 3px rgba(242, 118, 64, 0.12);
+}
+
+.form-group textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #ad9a91;
+}
+
+/* Submit Button */
+.fuel-submit-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(
+    145deg,
+    #ffbd7c,
+    #f27640,
+    #a82d20
+  );
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fuel-submit-btn:hover {
+  background: linear-gradient(
+    145deg,
+    #f27640,
+    #a82d20
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(168, 45, 32, 0.22);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .fuel-request-page {
+    padding: 35px 15px;
+  }
+
+  .fuel-request-header h1 {
+    font-size: 26px;
+  }
+
+  .fuel-request-form {
+    padding: 25px 18px;
+  }
+}

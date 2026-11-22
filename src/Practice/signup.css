@@ -1,0 +1,265 @@
+
+/* Main Signup Page */
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  font-family: Arial, sans-serif;
+  background: #fffaf5;
+}
+
+/* Left Illustration */
+.signup-illustration {
+  width: 42%;
+  min-height: 100vh;
+  padding: 45px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #f58b36,
+    #a83232,
+    #641d2c
+  );
+}
+
+.signup-brand {
+  position: absolute;
+  top: 35px;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-art {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.signup-art-circle {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 85px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.signup-illustration h1 {
+  font-size: 34px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.signup-illustration > p {
+  color: #ffe9dc;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.signup-points {
+  margin-top: 15px;
+}
+
+.signup-points p {
+  font-size: 14px;
+  margin: 13px 0;
+}
+
+/* Right Form Section */
+.signup-form-side {
+  width: 58%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 25px;
+  box-sizing: border-box;
+}
+
+.signup-form-box {
+  width: 100%;
+  max-width: 430px;
+}
+
+.signup-back {
+  display: inline-block;
+  color: #a83232;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.signup-back:hover {
+  color: #f58b36;
+}
+
+.signup-tag {
+  color: #e77b2d;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.signup-heading h2 {
+  color: #382329;
+  font-size: 29px;
+  margin: 10px 0;
+}
+
+.signup-heading p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+/* Form Layout */
+.signup-form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form-box form > label {
+  color: #453139;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.signup-form-box form > input,
+.signup-form-box form > select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  margin-bottom: 15px;
+  border: 1px solid #eadbd5;
+  border-radius: 8px;
+  background: white;
+  color: #382329;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.signup-form-box form > input:focus,
+.signup-form-box form > select:focus {
+  border-color: #e77b2d;
+  box-shadow: 0 0 0 3px rgba(231, 123, 45, 0.12);
+}
+
+/* Create Account Button */
+.signup-submit {
+  width: 100%;
+  padding: 14px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background: linear-gradient(100deg, #f58b36, #a83232);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(168, 50, 50, 0.2);
+}
+
+/* Login Link */
+.signup-login {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+  font-size: 13px;
+}
+
+.signup-login a {
+  color: #a83232;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-login a:hover {
+  text-decoration: underline;
+}
+
+.signup-footer {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 800px) {
+  .signup-page {
+    flex-direction: column;
+  }
+
+  .signup-illustration {
+    width: 100%;
+    min-height: auto;
+    padding: 90px 25px 30px;
+    text-align: center;
+  }
+
+  .signup-brand {
+    top: 25px;
+    left: 25px;
+  }
+
+  .signup-art {
+    margin: 15px 0;
+  }
+
+  .signup-art-circle {
+    width: 115px;
+    height: 115px;
+    font-size: 55px;
+  }
+
+  .signup-illustration h1 {
+    font-size: 27px;
+  }
+
+  .signup-illustration > p {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .signup-points {
+    margin-top: 10px;
+  }
+
+  .signup-points p {
+    margin: 8px 0;
+  }
+
+  .signup-form-side {
+    width: 100%;
+    padding: 30px 22px;
+  }
+
+  .signup-form-box {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 380px) {
+  .signup-heading h2 {
+    font-size: 25px;
+  }
+
+  .signup-illustration h1 {
+    font-size: 24px;
+  }
+}

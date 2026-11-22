@@ -1,0 +1,211 @@
+
+.settings-page {
+  min-height: 100vh;
+  padding: 50px 5%;
+  background: #fff8f3;
+  font-family: 'Poppins', sans-serif;
+  color: #38251f;
+}
+
+.settings-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+.settings-header {
+  margin-bottom: 35px;
+}
+
+.settings-header h1 {
+  color: #a82d20;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.settings-header p {
+  color: #806c62;
+  font-size: 14px;
+}
+
+/* Settings Cards */
+.settings-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 24px;
+  margin-bottom: 18px;
+  border: 1px solid #f2dfd3;
+  border-radius: 13px;
+  box-shadow: 0 5px 18px rgba(168, 45, 32, 0.05);
+  transition: 0.3s ease;
+}
+
+.settings-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(168, 45, 32, 0.09);
+}
+
+.settings-card-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #fff0e5;
+  border-radius: 12px;
+  font-size: 25px;
+}
+
+.settings-card-content {
+  flex: 1;
+}
+
+.settings-card-content h3 {
+  color: #a82d20;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.settings-card-content p {
+  color: #806c62;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Action Button */
+.settings-action-btn {
+  border: none;
+  background: transparent;
+  color: #c34b2c;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.settings-action-btn:hover {
+  color: #a82d20;
+}
+
+/* Notification Toggle */
+.settings-toggle {
+  position: relative;
+  width: 48px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.settings-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.settings-slider {
+  position: absolute;
+  inset: 0;
+  background: #d8c8bf;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.settings-slider::before {
+  content: "";
+  position: absolute;
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.settings-toggle input:checked + .settings-slider {
+  background: #f27640;
+}
+
+.settings-toggle input:checked + .settings-slider::before {
+  transform: translateX(23px);
+}
+
+/* Logout */
+.settings-logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #f2dfd3;
+  border-radius: 13px;
+}
+
+.settings-logout h3 {
+  color: #a82d20;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.settings-logout p {
+  color: #806c62;
+  font-size: 12px;
+}
+
+.logout-btn {
+  padding: 10px 22px;
+  background: #fff0e5;
+  color: #a82d20;
+  border: 1px solid #f2cdbb;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #a82d20;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .settings-page {
+    padding: 30px 15px;
+  }
+
+  .settings-header h1 {
+    font-size: 26px;
+  }
+
+  .settings-card {
+    padding: 18px 14px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .settings-card-content h3 {
+    font-size: 14px;
+  }
+
+  .settings-card-content p {
+    font-size: 11px;
+  }
+
+  .settings-action-btn {
+    margin-left: auto;
+  }
+
+  .settings-logout {
+    padding: 18px;
+  }
+}

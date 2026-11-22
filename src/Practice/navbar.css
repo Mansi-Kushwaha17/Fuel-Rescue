@@ -1,0 +1,151 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 6%;
+  background-color: #ffffff;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 20px;
+}
+
+/* Logo */
+.logo {
+  text-decoration: none;
+  color: #172033;
+  font-size: 25px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.logo-icon {
+  margin-right: 6px;
+}
+
+.logo-highlight {
+  color: #ed641b;
+}
+
+/* Navigation Links */
+.div-link {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.div-link a {
+  text-decoration: none;
+  color: #394150;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.div-link a:hover {
+  color: #ed641b;
+}
+
+/* Login and Signup */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-btn,
+.signup-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-btn {
+  color: #ed641b;
+  border: 1px solid #ed641b;
+}
+
+.login-btn:hover {
+  background-color: #fff0e7;
+}
+
+.signup-btn {
+  color: white;
+  background-color: #ed641b;
+  border: 1px solid #ed641b;
+}
+
+.signup-btn:hover {
+  background-color: #cf4e0c;
+  border-color: #cf4e0c;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 16px 4%;
+  }
+
+  .div-link {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .nav-buttons {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-buttons {
+    gap: 6px;
+  }
+
+  .login-btn,
+  .signup-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .div-link {
+    gap: 14px;
+  }
+
+  .div-link a {
+    font-size: 13px;
+  }
+}
+.admin-btn{
+    background-color: #8b2e1f;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #8b2e1f ;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    transform: 0.3s;
+}
+.admin-btn:hover{
+    background-color: white;
+    color: #8b2e1f;
+    border-color: #8b2e1f;
+}

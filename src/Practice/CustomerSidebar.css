@@ -1,0 +1,573 @@
+
+/* =====================================
+   CUSTOMER PAGE - MAIN
+===================================== */
+
+.customer-page {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: #28212a;
+    background: #fffaf4;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.customer-page * {
+    box-sizing: border-box;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.customer-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 7%;
+    min-height: 480px;
+    background: linear-gradient(
+        120deg,
+        #fff7e9,
+        #ffe2c5,
+        #f7a16c
+    );
+}
+
+.customer-content {
+    flex: 1;
+    max-width: 560px;
+}
+
+.customer-tag {
+    display: inline-block;
+    padding: 9px 16px;
+    margin-bottom: 20px;
+    color: #a73a20;
+    background: #ffffff;
+    border: 1px solid #f2b18c;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.customer-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    color: #281b1b;
+}
+
+.customer-content h1 span {
+    display: block;
+    color: #c44220;
+}
+
+.customer-content > p {
+    color: #62524d;
+    line-height: 1.8;
+    max-width: 470px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* Hero Buttons */
+
+.customer-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.customer-page .request-btn,
+.customer-page .explore-btn {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.customer-page .request-btn {
+    color: white;
+    background: linear-gradient(
+        120deg,
+        #f05a24,
+        #a92d19
+    );
+    box-shadow: 0 6px 15px #a92d1930;
+}
+
+.customer-page .request-btn:hover {
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px #a92d1940;
+}
+
+.customer-page .explore-btn {
+    color: #8e321e;
+    border: 1px solid #a74429;
+    background: white;
+}
+
+.customer-page .explore-btn:hover {
+    color: white;
+    background: #a74429;
+}
+
+/* =====================================
+   CUSTOMER FEATURES
+===================================== */
+
+.customer-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 38px;
+}
+
+.customer-features div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.customer-features h3 {
+    color: #bd4424;
+    font-size: 23px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.customer-features p {
+    color: #62524d;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* =====================================
+   HERO IMAGE
+===================================== */
+
+.customer-image {
+    flex: 1;
+    max-width: 490px;
+    position: relative;
+}
+
+.customer-image img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 22px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 20px 45px #74371e25;
+}
+
+.image-card {
+    position: absolute;
+    bottom: 20px;
+    left: -25px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 15px 20px;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 10px 30px #5a281e25;
+}
+
+.image-card span {
+    font-size: 34px;
+}
+
+.image-card h4 {
+    color: #39251f;
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.image-card p {
+    color: #81716b;
+    font-size: 11px;
+    margin: 0;
+}
+
+/* =====================================
+   SECTION HEADING
+===================================== */
+
+.customer-page .section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.customer-page .section-heading > span {
+    display: inline-block;
+    color: #c44a29;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.customer-page .section-heading h2 {
+    color: #39251f;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.customer-page .section-heading p {
+    color: #776861;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* =====================================
+   FUEL SELECTION SECTION
+===================================== */
+
+.fuel-selection {
+    padding: 65px 7%;
+    background: linear-gradient(
+        180deg,
+        #fffaf4,
+        #fff0e2
+    );
+}
+
+.fuel-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Fuel Cards */
+
+.fuel-card {
+    position: relative;
+    padding: 35px 28px;
+    min-height: 245px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #f1ded0;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #592e1b12;
+    transition: all 0.3s ease;
+}
+
+.fuel-card:hover {
+    transform: translateY(-8px);
+    border-color: #e5a17e;
+    box-shadow: 0 15px 30px #7d361c20;
+}
+
+/* Fuel Icon */
+
+.fuel-icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: linear-gradient(
+        145deg,
+        #ffe0c5,
+        #ffb17d
+    );
+    font-size: 36px;
+    box-shadow: 0 5px 15px #a73a2015;
+}
+
+.fuel-card h3 {
+    color: #39251f;
+    font-size: 21px;
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+
+.fuel-card p {
+    color: #746660;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.fuel-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(
+        120deg,
+        #f05a24,
+        #a92d19
+    );
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.fuel-card a:hover {
+    color: white;
+    background: #812b1b;
+    transform: translateY(-3px);
+}
+
+/* =====================================
+   HOW IT WORKS
+===================================== */
+
+.how-it-works {
+    padding: 65px 7%;
+    background: #fffaf4;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* Step Cards */
+
+.step-card {
+    position: relative;
+    padding: 32px 23px;
+    min-height: 220px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #f1ded0;
+    border-radius: 16px;
+    box-shadow: 0 7px 22px #592e1b10;
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-7px);
+    border-color: #e5a17e;
+    box-shadow: 0 14px 28px #7d361c20;
+}
+
+/* Step Number */
+
+.step-number {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    color: white;
+    background: linear-gradient(
+        145deg,
+        #f27640,
+        #a92d19
+    );
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow: 0 6px 15px #a92d1930;
+}
+
+.step-card h3 {
+    color: #39251f;
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.step-card p {
+    color: #746660;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* =====================================
+   FINAL CTA SECTION
+===================================== */
+
+.customer-cta {
+    position: relative;
+    margin: 50px 7%;
+    padding: 55px 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(
+        110deg,
+        #81301e,
+        #401b20
+    );
+    box-shadow: 0 12px 30px #592e1b20;
+}
+
+.customer-cta h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+
+.customer-cta p {
+    color: #f5dcd0;
+    font-size: 14px;
+    margin: 0 0 25px;
+}
+
+.customer-cta a {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 30px;
+    color: #8e321e;
+    background: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.customer-cta a:hover {
+    color: #8e321e;
+    background: #fff0e5;
+    transform: translateY(-4px);
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .customer-content h1 {
+        font-size: 42px;
+    }
+
+    .customer-image {
+        max-width: 420px;
+    }
+
+    .customer-image img {
+        height: 320px;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 650px) {
+
+    .customer-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 38px 6%;
+    }
+
+    .customer-content {
+        max-width: 100%;
+    }
+
+    .customer-content h1 {
+        font-size: 36px;
+    }
+
+    .customer-content > p {
+        font-size: 14px;
+    }
+
+    .customer-features {
+        gap: 20px;
+    }
+
+    .customer-image {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .customer-image img {
+        height: 260px;
+    }
+
+    .image-card {
+        left: 10px;
+        bottom: 12px;
+    }
+
+    .fuel-selection,
+    .how-it-works {
+        padding: 42px 5%;
+    }
+
+    .customer-page .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .fuel-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .fuel-card {
+        min-height: 220px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .step-card {
+        min-height: 190px;
+    }
+
+    .customer-cta {
+        margin: 35px 5%;
+        padding: 40px 20px;
+    }
+
+    .customer-cta h2 {
+        font-size: 24px;
+    }
+}
+
+/* Small Mobile */
+
+@media (max-width: 380px) {
+
+    .customer-content h1 {
+        font-size: 31px;
+    }
+
+    .customer-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .customer-features {
+        gap: 15px;
+    }
+
+    .customer-page .section-heading h2 {
+        font-size: 23px;
+    }
+}
